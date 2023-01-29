@@ -46,17 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppConfig.cs" />
-    <Compile Include="Tcp_Client.cs">
+    <Compile Include="TCP\Tcp_Client.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tcp_Client.Designer.cs">
+    <Compile Include="TCP\Tcp_Client.Designer.cs">
       <DependentUpon>Tcp_Client.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tcp_Server.cs">
+    <Compile Include="TCP\Tcp_Server.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tcp_Server.Designer.cs">
+    <Compile Include="TCP\Tcp_Server.Designer.cs">
       <DependentUpon>Tcp_Server.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -69,11 +68,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Tcp_Client.resx">
+    <EmbeddedResource Include="TCP\Tcp_Client.resx">
       <DependentUpon>Tcp_Client.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tcp_Server.resx">
+    <EmbeddedResource Include="TCP\Tcp_Server.resx">
       <DependentUpon>Tcp_Server.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
