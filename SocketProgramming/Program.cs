@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SocketProgramming.UDP;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,8 @@ namespace SocketProgramming
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tcp_Client());
+            //Application.Run(new Tcp_Client());
+            Application.Run(new Udp_Server());
         }
     }
 }
